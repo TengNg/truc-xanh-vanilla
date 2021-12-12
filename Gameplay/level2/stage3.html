@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../boardStyle-extra.css">
+   <title>Level 2 - Stage 3</title>
+</head>
+
+<body>
+   <div class="container">
+
+      <div class='guide-box'>
+         Hoàn thành các ô HOẶC đoán đúng câu hỏi thì qua màn.
+      </div>
+
+      <h3 class='clock'>Thời gian: <span class='countdown'>...</span>s</h3>
+      <button class="answer-question-btn">
+         <i class="fas fa-question"></i>
+      </button>
+      <div class="board"></div>
+      <div class="buttonDiv">
+         <button class='return-btn'>
+            <i class="fas fa-arrow-left"></i>
+         </button>
+         <button class='continue-btn'>
+            <i class="fas fa-arrow-right"></i>
+         </button>
+      </div>
+      <button class='return-menu'><i class="fas fa-sign-out-alt"></i></button>
+   </div>
+   <div class="question-pop-up">
+      <input class='answer-input' type="text" placeholder='Câu thành ngữ/tục ngữ phía sau là gì?'>
+      <button class="submit-question-btn">
+         <i class="far fa-check-circle"></i>
+      </button>
+      <button class="cancel-btn">
+         <i class="far fa-times-circle"></i>
+      </button>
+   </div>
+   <div class="start-screen">
+      <button class="start-btn">Bắt đầu</button>
+   </div>
+   <div class="result-screen">
+      <div class='winning-message'></div>
+      <button class='store-point-btn'>Lưu điểm</button>
+      <button class='winning-continue-btn'>Tiếp tục</button>
+      <button class='restart-btn'>Chơi lại</button>
+   </div>
+
+   <!-- DISPLAY TOTAL POINT -->
+   <div class="point-per-stage"></div>
+   
+   <script src="../levelBoard/cardData/level2_stage3_data.js"></script>
+   <script src='../levelBoard/paging.js'></script>
+   <script src=' ../levelBoard/gameplayMode/normal_mode_gameplay.js'></script>
+</body>
+
+</html>

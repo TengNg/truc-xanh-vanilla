@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>High Scores Board</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         background: lightgray;
+         height: 100vh;
+      }
+
+      .container>div {
+         height: 50vh;
+         margin-top: 20px;
+      }
+
+      a {
+         border: 2px solid black;
+         padding: 10px 20px;
+         text-decoration: none;
+         font-weight: bold;
+         font-size: 0.8rem;
+         color: black;
+         border-radius: 10px;
+         transition: all 0.4s ease;
+      }
+
+      a:hover,
+      .container>div h2:hover {
+         color: rgb(80, 80, 80);
+         border-color: rgb(80, 80, 80);
+         border-radius: 30px;
+      }
+
+      .container>div ul {
+         text-align: center;
+         padding: 10px;
+         list-style: none;
+      }
+
+      .container>div ul li {
+         margin-bottom: 10px;
+         font-weight: bold;
+      }
+
+      .container>div h2 {
+         border: 2px solid black;
+         padding: 15px 25px;
+         font-size: 1rem;
+         border-radius: 10px;
+         transition: all 0.3s ease-out;
+      }
+
+      hr {
+         width: 60vw;
+         border: 0;
+         background-color: lightgray;
+         border-top: 4px dashed black;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="container">
+      <div class="level2_highScores">
+         <h2>Top điểm cao mức độ Thường</h2>
+         <ul class='highScoresList_Level2'></ul>
+      </div>
+      <hr>
+      <div class="level3_highScores">
+         <h2>Top điểm cao mức độ Khó</h2>
+         <ul class='highScoresList_Level3'></ul>
+      </div>
+      <a href="index.html">Trở về menu</a>
+   </div>
+   <script src='display-high-scores.js'></script>
+</body>
+
+</html>

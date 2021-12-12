@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+body {
+  background: url("images/index_background/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.theme-btn {
+  position: absolute;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-weight: bold;
+  left: 20px;
+  top: 20px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: rgb(230, 230, 230);
+  color: #1dad38;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.theme-btn i {
+  transition: all 0.4s ease;
+}
+.theme-btn:hover i {
+  transform: rotate(60deg);
+}
+.theme-btn:hover {
+  filter: brightness(0.8);
+}
+
+.theme-btn:hover {
+  color: gray;
+  background-color: white;
+}
+
+.title {
+  border: 4px solid black;
+  padding: 20px 55px;
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(62, 176, 75);
+  border-radius: 10px;
+  user-select: none;
+  font-family: "Lobster";
+  transition: all 0.5s ease;
+}
+
+.title:hover {
+  color: darkslategray;
+  background-color: hsla(150, 100%, 50%, 0.7);
+}
+
+.container,
+.stage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 100vh;
+}
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.stage > a {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(3, 252, 119, 0.7);
+  color: black;
+  border: 3px solid black;
+  outline: 3px solid transparent;
+  height: 60px;
+  width: 160px;
+  text-align: center;
+  line-height: 55px;
+  margin: 15px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.stage > a:last-of-type {
+  background-color: rgb(50, 168, 143);
+}
+
+.stage > a:hover {
+  outline-offset: -9px;
+  outline-color: black;
+}
+
+.stage > button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  color: rgb(41, 41, 41);
+  font-size: 2rem;
+}
+
+.showHighScoresButton {
+  margin: 0 auto;
+  padding: 15px 45px;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.guide-screen,
+.choose-theme-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  font-size: 1rem;
+  line-height: 200%;
+  color: white;
+}
+
+.choose-theme-screen {
+  justify-content: center;
+  align-items: center;
+}
+
+.guide-screen > button,
+.cancel-choosing-theme-btn {
+  /*position: absolute;*/
+  bottom: 600px;
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.theme-list {
+  list-style: none;
+}
+
+.theme-list li button {
+  margin: 20px;
+  padding: 25px 55px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.theme-list li:first-of-type button {
+  background-color: rgb(105, 57, 145);
+}
+
+.theme-list li:nth-of-type(2) button {
+  background-color: rgb(62, 176, 75);
+}
+
+.theme-list li:last-of-type button {
+  background-color: rgb(152, 237, 162);
+}
+
+.theme-list li > button:hover {
+  filter: brightness(1.2);
+}

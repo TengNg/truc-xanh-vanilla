@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  font-size: 1rem;
+  align-items: center;
+  width: 180px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  cursor: not-allowed;
+}
+
+.return-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 2rem;
+  transform: rotate(-180deg);
+  background: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* BOARD + CARD */
+.board {
+  display: grid;
+  grid-gap: 1px;
+  -webkit-perspective: 600px;
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: 2px solid grey;
+}
+
+.front-face,
+.back-face {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.back-face {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.toggleCard {
+  transform: rotateY(180deg);
+}
+
+/*  RESULT BOX  */
+.result-screen,
+.start-screen,
+.question-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+
+.start-screen {
+  display: flex;
+}
+
+/* result screen */
+.result-screen > button,
+.start-screen > button {
+  color: white;
+  border: 5px solid white;
+  outline: 1px solid transparent;
+  background: transparent;
+  height: 70px;
+  width: 150px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.result-screen > button:hover,
+.start-screen > button:hover {
+  outline-offset: -15px;
+  outline-color: white;
+  outline-width: 5px;
+}
+
+.paging {
+  margin-top: 10px;
+}
+
+.buttonDiv {
+  width: 225px;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonDiv > button {
+  height: 40px;
+  width: 100px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(85, 85, 85);
+  margin: 8px 5px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.buttonDiv > button:hover {
+  color: black;
+  background: rgb(173, 173, 173);
+}
+
+/* copy from normal mode */
+.storing-point-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: none;
+}
+
+.storing-point-div {
+  flex-direction: row;
+  display: none;
+}
+
+.storing-point-div > button {
+  font-size: 3rem;
+  background: transparent;
+  border: none;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.storing-point-btn {
+  color: rgb(9, 170, 9);
+}
+
+.cancel-storing-point-btn {
+  color: red;
+}
+
+.storing-point-btn:hover {
+  font-size: 3.2rem;
+  color: lightgreen;
+  text-shadow: 0 0 10px lightgreen;
+}
+
+.cancel-storing-point-btn:hover {
+  color: rgb(247, 65, 65);
+  transform: rotate(180deg);
+  text-shadow: 0 0 10px rgb(247, 65, 65);
+}
+
+.player-name-input {
+  height: 4rem;
+  width: 20rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  border-radius: 10px;
+}

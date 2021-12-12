@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="style.css">
+   <title>TRÚC XANH</title>
+</head>
+
+<body>
+   <button class='theme-btn'><i class="fas fa-palette"></i></button>
+   <div class="container">
+      <div class='title'>Trúc Xanh</div>
+      <div class="stage">
+         <button class='show-guide-btn'><i class="fas fa-question-circle"></i></button>
+         <a class='easyMode' href="Gameplay/level1/stage1.html">Dễ</a>
+         <a class='normalMode' href="Gameplay/level2/stage1.html">Thường</a>
+         <a class='hardMode' href="Gameplay/level3/stage1.html">Khó</a>
+         <a class='highScoresBoard' href="highScores.html">Xếp hạng</a>
+      </div>
+   </div>
+   <div class='guide-screen'>
+      <button class='cancel-btn'>
+         <i class="far fa-times-circle"></i>
+      </button>
+      <pre>
+                        <b>HƯỚNG DẪN CHƠI</b>:
+- Ghi nhớ các vị trí của các lá bài và tìm những cặp thẻ bài giống nhau. 
+- Ở chế độ THƯỜNG và KHÓ:
+        + Bấm nút <span><i class="far fa-question-circle"></i></span> để trả lời câu hỏi.
+        + Sau khi hoàn thành vòng đấu, bấm nút <b>TIẾP TỤC</b> để qua màn tiếp theo hoặc bấm nút <b>CHƠI LẠI</b> để cải thiện điểm.
+        + Nút mũi tên <span><i class="fas fa-arrow-circle-left"></i></span> <span><i class="fas fa-arrow-circle-right"></i></span> để chuyển vòng. 
+*<b>LƯU Ý</b>:
+   <b style='text-decoration: underline;'>Ví dụ</b>: Bạn đang ở vòng 2 và bạn bấm <span><i class="fas fa-arrow-circle-left"></i></span> để quay lại vòng 1, thì bạn buộc phải hoàn thành lại vòng 1 để có thể đi tiếp.
+
+   <b>Màn chơi</b>:
+        - <b>DỄ</b>: chế độ cơ bản, không thời gian, không tính điểm.
+        - <b>THƯỜNG</b>: lật được tất cả thẻ bải <b>HOẶC</b> trả lời đúng câu hỏi phía sau thì qua màn. <b>Điểm = 20 + thời gian còn lại.</b>
+        - <b>KHÓ</b>: lật được tất cả thẻ bài <b>VÀ</b> trả lời đúng câu hỏi phía sau thì qua màn. <b>Điểm = 30 + thời gian còn lại.</b>
+
+   <b>Sau khi hoàn thành chế độ chơi</b>: Bấm nút <b>LƯU ĐIỂM</b>, nhập tên của bạn để lưu lại điểm số trong <b>XẾP HẠNG</b>.    
+      </pre>
+   </div>
+   <div class='choose-theme-screen'>
+      <button class='cancel-choosing-theme-btn'>
+         <i class="far fa-times-circle"></i>
+      </button>
+      <ul class='theme-list'>
+         <li><button class='theme1' onclick='theme1()'>Giao diện 1</button></li>
+         <li><button class='theme2' onclick='theme2()'>Giao diện 2</button></li>
+         <li><button class='theme3' onclick='theme3()'>Giao diện 3</button></li>
+      </ul>
+   </div>
+   <script type="text/javascript" src='app.js'></script>
+</body>
+
+</html>

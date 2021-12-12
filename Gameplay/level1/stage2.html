@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="../boardStyle.css">
+   <title>Level 1 - Stage 2</title>
+</head>
+
+<body>
+   <div class="container">
+      <h3 class='clock'>Không thời gian</h3>
+      <div class="board"></div>
+      <div class="buttonDiv">
+         <button class='return-btn'>
+            <i class="fas fa-arrow-left"></i>
+         </button>
+         <button class='continue-btn'>
+            <i class="fas fa-arrow-right"></i>
+         </button>
+      </div>
+      <button class='return-menu'><i class="fas fa-sign-out-alt"></i></button>
+   </div>
+   <div class="result-screen">
+      <div class='winning-message'>Hết thời gian</div>
+      <button class='winning-continue-btn'>Tiếp tục</button>
+      <button class='restart-btn'>Chơi lại</button>
+   </div>
+   <script src="../levelBoard/cardData/level1_stage2_data.js"></script>
+   <script src='../levelBoard/paging.js'></script>
+   <script src=' ../levelBoard/gameplayMode/easy_mode_gameplay.js'></script>
+</body>
+
+</html>
