@@ -2,7 +2,7 @@ const ROWS = 6
 const COLUMNS = 8
 const BOARD_SIZE = ROWS * COLUMNS
 
-const TIME_REMAINING = 3
+const TIME_REMAINING = 320
 
 const currentLevel = 3
 const currentStage = 3
